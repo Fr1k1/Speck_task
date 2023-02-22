@@ -1,3 +1,31 @@
 body {
+    background-color: white;
+}
+
+#input_field {
+    border-color: red;
+    border-radius: 8px;
+}
+
+#remove_all {
+    position: relative;
+    left:10rem;
+}
+
+#main_div {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin:0 auto;
+}
+
+.new_item {
     background-color: red;
+}
+
+#remove_button {
+    border-style: none;
+    background-color: white;
+    color:red;
+    text-decoration: underline;
 }
