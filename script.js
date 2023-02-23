@@ -1,10 +1,11 @@
 const input = document.getElementById("input_field");
+const technologiesDiv = document.getElementById("technologies_div");
 
 
 document.querySelector("#add_button").addEventListener("click", function () {
     const newTechnology = document.createElement('div');
     newTechnology.innerText = input.value;
-    document.body.appendChild(newTechnology).classList.add("new_item");
+    technologiesDiv.appendChild(newTechnology).classList.add("new_item");
     input.value = '';
 })
 

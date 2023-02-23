@@ -9,23 +9,57 @@ body {
 
 #remove_all {
     position: relative;
-    left:10rem;
+    left: 10rem;
 }
 
 #main_div {
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
     display: flex;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 .new_item {
-    background-color: red;
+    background-color: wheat;
+    box-shadow: 2px;
+    height: 3rem;
+    grid-column: span 2;
+    padding: 2rem;
+    text-align: center;
+}
+
+/*.new_item:nth-child(2n+1) {
+    grid-column: span 1;
+}*/
+
+.new_item:nth-child(n + 3) {
+    grid-column: span 2;
 }
 
 #remove_button {
     border-style: none;
     background-color: white;
-    color:red;
+    color: red;
     text-decoration: underline;
+}
+
+#add_button {
+    background-color: #ffecec;
+    color: red;
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+}
+
+#technologies_div {
+    position: relative;
+    top: 3rem;
+    width: 70%;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 20px;
+    margin: 0 auto;
 }
