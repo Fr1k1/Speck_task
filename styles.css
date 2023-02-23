@@ -7,11 +7,11 @@ body {
     height: 2rem;
     width: 18rem;
     border-style: solid;
+    padding-left: 10px;
+    
 }
 
-#input_field::placeholder {
-    padding-left: 10px;
-}
+
 
 #remove_all {
     position: relative;
