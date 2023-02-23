@@ -3,9 +3,11 @@ body {
 }
 
 #input_field {
-    border-color: red;
+    border-color: #bf3939;
     border-radius: 8px;
-    font-size: x-large;
+    height: 2rem;
+    width: 18rem;
+    border-style: solid;
 }
 
 #remove_all {
@@ -22,14 +24,15 @@ body {
 
 .new_item {
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
     grid-column: span 2;
     padding: 2rem;
     text-align: center;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: x-large;
     height: fit-content;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*.new_item:nth-child(2n+1) {
@@ -43,17 +46,24 @@ body {
 #remove_button {
     border-style: none;
     background-color: white;
-    color: red;
+    color: #bf3939;
     text-decoration: underline;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 #add_button {
     background-color: #ffecec;
-    color: red;
+    color: #bf3939;
     border-style: solid;
-    border-color: red;
+    border-color: #bf3939;
     border-width: 1px;
     position: relative;
+    height: 2rem;
+    border-radius: 8px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: bold;
 }
 
 #technologies_div {
@@ -89,7 +99,7 @@ body {
 }
 
 #operations_div > :nth-child(3) {
-    margin-left: 40rem;
+    margin-left: 35rem;
 }
 
 @media screen and (min-width: 2000px) {
@@ -104,12 +114,20 @@ body {
     }
 
     #operations_div > :nth-child(3) {
-        margin-left: 32rem;
+        margin-left: 26rem;
     }
 }
 
 h1 {
-    padding-top: 2rem;
-    padding-left: 2rem;
+    
     margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
 }
