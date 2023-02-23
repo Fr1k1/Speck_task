@@ -3,11 +3,14 @@ body {
 }
 
 #input_field {
-    border-color: #bf3939;
     border-radius: 8px;
     height: 2rem;
     width: 18rem;
     border-style: solid;
+}
+
+#input_field::placeholder {
+    padding-left: 10px;
 }
 
 #remove_all {
@@ -32,7 +35,7 @@ body {
     font-weight: bolder;
     font-size: x-large;
     height: fit-content;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 /*.new_item:nth-child(2n+1) {
@@ -48,8 +51,7 @@ body {
     background-color: white;
     color: #bf3939;
     text-decoration: underline;
-    font-family: 'Montserrat', sans-serif;
-
+    font-family: "Montserrat", sans-serif;
 }
 
 #add_button {
@@ -64,6 +66,12 @@ body {
     padding-left: 1rem;
     padding-right: 1rem;
     font-weight: bold;
+    transition: background-color 0.3s ease-out;
+}
+
+#add_button:hover {
+    background-color: #b83336;
+    color: white;
 }
 
 #technologies_div {
@@ -99,7 +107,7 @@ body {
 }
 
 #operations_div > :nth-child(3) {
-    margin-left: 35rem;
+    margin-left: 38rem;
 }
 
 @media screen and (min-width: 2000px) {
@@ -119,9 +127,8 @@ body {
 }
 
 h1 {
-    
     margin: 0;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
     display: flex;
     flex-direction: row;
     width: 60%;
@@ -130,4 +137,9 @@ h1 {
     margin: 0 auto;
     padding-top: 8rem;
     padding-bottom: 2rem;
+}
+
+input[type="text"]:focus {
+    outline: none !important;
+    border: 2px solid #bf3939;
 }
