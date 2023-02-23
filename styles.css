@@ -5,6 +5,7 @@ body {
 #input_field {
     border-color: red;
     border-radius: 8px;
+    font-size: x-large;
 }
 
 #remove_all {
@@ -20,12 +21,15 @@ body {
 }
 
 .new_item {
-    background-color: wheat;
-    box-shadow: 2px;
-    height: 3rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
     grid-column: span 2;
     padding: 2rem;
     text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    height: fit-content;
 }
 
 /*.new_item:nth-child(2n+1) {
@@ -49,17 +53,63 @@ body {
     border-style: solid;
     border-color: red;
     border-width: 1px;
+    position: relative;
 }
 
 #technologies_div {
     position: relative;
     top: 3rem;
-    width: 70%;
+    width: 60%;
     display: grid;
     justify-content: center;
     text-align: center;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-auto-rows: auto;
     grid-gap: 20px;
     margin: 0 auto;
+}
+
+#operations_div {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 auto;
+}
+
+#input_field {
+    margin-right: auto;
+}
+
+#remove_button {
+    margin-left: auto;
+}
+
+#operations_div > :nth-child(3) {
+    margin-left: 40rem;
+}
+
+@media screen and (min-width: 2000px) {
+    #operations_div > :nth-child(3) {
+        margin-left: 20rem;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    #add_button {
+        margin-left: 3rem;
+    }
+
+    #operations_div > :nth-child(3) {
+        margin-left: 32rem;
+    }
+}
+
+h1 {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    margin: 0;
 }
