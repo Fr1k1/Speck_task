@@ -121,8 +121,6 @@ body {
 }
 
 @media screen and (max-width: 1280px) {
-    
-
     #technologies_div {
         grid-template-columns: repeat(auto-fill, minmax(172px, 1fr));
     }
