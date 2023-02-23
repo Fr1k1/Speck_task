@@ -2,7 +2,12 @@ const input = document.getElementById("input_field");
 const technologiesDiv = document.getElementById("technologies_div");
 
 
-document.querySelector("#add_button").addEventListener("click", function () {
+document.querySelector("#add_button").addEventListener("click", function (e) {
+
+    if (input.value == "") {
+        alert("Molim unesite tekst");
+        return;
+    }
     const newTechnology = document.createElement('div');
     newTechnology.innerText = input.value;
     technologiesDiv.appendChild(newTechnology).classList.add("new_item");
